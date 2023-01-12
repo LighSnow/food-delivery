@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./build/account-settings.css" />
+        <title>Food delivery</title>
+    </head>
+    <body>
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="./index.html">
+                        <img src="./build/images/logo.svg" alt="Food delivery" />
+                    </a>
+                    <div class="header__middle js-menu">
+                        <form class="header__search" action="search">
+                            <input class="header__search-input" type="text" placeholder="Search" />
+                            <button class="header__search-button" type="submit">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                                        stroke="#83859C"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li><a class="header__link" href="#">Restaurants</a></li>
+                                <li><a class="header__link" href="#">Deals</a></li>
+                                <li><a class="header__link header__link--delimiter" href="#">My orders</a></li>
+                            </ul>
+                        </nav>
+                        <button class="header__close js-menu-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path
+                                    d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <a class="header__basket" href="#">
+                        <span class="header__basket-order">4</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 1.66666L2.5 4.99999V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V4.99999L15 1.66666H5Z"
+                                stroke="#4E60FF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path d="M2.5 5H17.5" stroke="#4E60FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.3333 8.33334C13.3333 9.2174 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.884 11.6667 9.99999 11.6667C9.11593 11.6667 8.26809 11.3155 7.64297 10.6904C7.01785 10.0652 6.66666 9.2174 6.66666 8.33334"
+                                stroke="#4E60FF"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                    <a class="header__user" href="./account-settings.html">
+                        <img src="./build/images/user.jpg" alt="user" />
+                    </a>
+                    <button class="header__menu js-menu-toggle">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8H14" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 4H14" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 12H14" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main class="container">
+            <section class="account-settings">
+                <aside class="account-settings__aside aside">
+                    <h2 class="account-settings__title">Settings</h2>
+                    <div class="aside__item active">
+                        <span class="aside__item-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6666 17.5V15.8333C16.6666 14.9493 16.3155 14.1014 15.6903 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66665C5.78259 12.5 4.93474 12.8512 4.30962 13.4763C3.6845 14.1014 3.33331 14.9493 3.33331 15.8333V17.5"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+                        <h3 class="aside__item-title">Account</h3>
+                        <span class="aside__item-text">Personal information</span>
+                    </div>
+                    <div class="aside__item">
+                        <span class="aside__item-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.3442 3.29018 4.43655 4.6967 3.03003C6.10322 1.6235 8.01088 0.833328 10 0.833328C11.9891 0.833328 13.8968 1.6235 15.3033 3.03003C16.7098 4.43655 17.5 6.3442 17.5 8.33333Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M10 10.8333C11.3807 10.8333 12.5 9.71404 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71404 8.61929 10.8333 10 10.8333Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+                        <h3 class="aside__item-title">Address</h3>
+                        <span class="aside__item-text">Shippings addresses</span>
+                    </div>
+                    <div class="aside__item">
+                        <span class="aside__item-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.5 3.33334H2.49998C1.5795 3.33334 0.833313 4.07953 0.833313 5V15C0.833313 15.9205 1.5795 16.6667 2.49998 16.6667H17.5C18.4205 16.6667 19.1666 15.9205 19.1666 15V5C19.1666 4.07953 18.4205 3.33334 17.5 3.33334Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path d="M0.833313 8.33334H19.1666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <h3 class="aside__item-title">Payment method</h3>
+                        <span class="aside__item-text">Connected credit cards</span>
+                    </div>
+                    <div class="aside__item">
+                        <span class="aside__item-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6666 17.5V15.8333C16.6666 14.9493 16.3155 14.1014 15.6903 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66665C5.78259 12.5 4.93474 12.8512 4.30962 13.4763C3.6845 14.1014 3.33331 14.9493 3.33331 15.8333V17.5"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+                        <h3 class="aside__item-title">Security</h3>
+                        <span class="aside__item-text">Password, 2FA</span>
+                    </div>
+                </aside>
+                <div class="account-settings__information information">
+                    <h2 class="account-settings__title">Account</h2>
+                    <form action="" class="information__form form">
+                        <div class="information__form-body">
+                            <h3 class="information__form-title form__title">Personal information</h3>
+                            <label class="information__form-label form__label" for="avatar">Avatar</label>
+                            <div class="information__form-avatar">
+                                <img class="information__form-image" src="./build/images/avatar.jpg" alt="avatar" />
+                                <label class="form__file form__btn form__btn--file">
+                                    Change
+                                    <input class="form__file-input" type="file" />
+                                </label>
+                                <button class="information__form-button form__btn form__btn--remove">Remove</button>
+                            </div>
+                            <div class="information__form-row">
+                                <label class="information__form-label form__label">
+                                    <span class="form__label-text">First name</span>
+                                    <input class="information__form-input form__input" type="text" placeholder="First name" />
+                                </label>
+                                <label class="information__form-label form__label">
+                                    <span class="form__label-text">Last name</span>
+                                    <input class="information__form-input form__input" type="text" placeholder="Last name" />
+                                </label>
+                            </div>
+                            <div class="information__form-row">
+                                <label class="information__form-label form__label">
+                                    <span class="form__label-text">Email</span>
+                                    <input class="information__form-input form__input" type="email" placeholder="Email" />
+                                </label>
+                                <label class="information__form-label form__label">
+                                    <span class="form__label-text">Phone number</span>
+                                    <input class="information__form-input form__input" type="tel" placeholder="Phone number" />
+                                </label>
+                            </div>
+                            <h3 class="information__form-title information__form-title--mt-68 form__title">Email notifications</h3>
+                            <div class="information__form-row">
+                                <ul class="information__form-list">
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">New deals</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">New restaurants</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">Order statuses</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="information__form-list">
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">Password changes</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">Special offers</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="information__form-option form__check">
+                                            <input class="form__check-input" type="checkbox" />
+                                            <span class="form__check-box"></span>
+                                            <span class="form__check-text">Newsletter</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information__form-actions">
+                            <button class="information__form-logout form__btn form__btn--red" type="button">Log out</button>
+                            <div class="information__form-changes">
+                                <button class="form__btn form__btn--gray" type="button">Discard changes</button>
+                                <button class="form__btn form__btn--blue" type="submit">Save changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="./build/account-settings.js"></script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./build/login.css" />
+        <title>Food delivery</title>
+    </head>
+    <body>
+        <main class="wrapper">
+            <div class="login">
+                <div class="login__inner">
+                    <a class="login__logo" href="./index.html">
+                        <img src="./build/images/logo.svg" alt="Food delivery" />
+                    </a>
+                    <form action="#" class="login__form">
+                        <h1 class="login__title">Login</h1>
+                        <p class="login__subtitle">Sign in with your data that you entered during your registration.</p>
+                        <label class="login__form-label form__label">
+                            <span class="form__label-text">Email</span>
+                            <input class="login__form-input form__input" type="enail" placeholder="name@example.com" required />
+                        </label>
+                        <label class="login__form-label form__label">
+                            <span class="form__label-text">Password</span>
+                            <input class="login__form-input form__input" type="password" placeholder="min. 8 characters" minlength="8" required />
+                            <svg
+                                class="login__form-show-pass js-show-pass"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0.833374 10C0.833374 10 4.16671 3.33333 10 3.33333C15.8334 3.33333 19.1667 10 19.1667 10C19.1667 10 15.8334 16.6667 10 16.6667C4.16671 16.6667 0.833374 10 0.833374 10Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </label>
+                        <label class="login__form-option form__check">
+                            <input class="form__check-input" type="checkbox" />
+                            <span class="form__check-box"></span>
+                            <span class="form__check-text">Keep me logged in</span>
+                        </label>
+                        <button class="login__form-btn form__btn form__btn--blue" type="submit">Login</button>
+                        <a class="login__form-forgot login__link" href="#">Forgot password</a>
+                    </form>
+                    <p class="login__have-acc">Don’t have an account? <a class="login__link" href="#">Sign up</a></p>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="reviews__slider js-reviews-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews__item swiper-slide">
+                            <img class="reviews__item-image" src="./build/images/review.png" alt="" />
+                            <h2 class="reviews__item-title">Leave reviews for all meals</h2>
+                            <p class="reviews__item-text">
+                                Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, eirmod assentior eum ne, et omnis antiopam
+                                mel.
+                            </p>
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <img class="reviews__item-image" src="./build/images/review.png" alt="" />
+                            <h2 class="reviews__item-title">Leave reviews for all meals</h2>
+                            <p class="reviews__item-text">
+                                Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, eirmod assentior eum ne, et omnis antiopam
+                                mel.
+                            </p>
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <img class="reviews__item-image" src="./build/images/review.png" alt="" />
+                            <h2 class="reviews__item-title">Leave reviews for all meals</h2>
+                            <p class="reviews__item-text">
+                                Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, eirmod assentior eum ne, et omnis antiopam
+                                mel.
+                            </p>
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <img class="reviews__item-image" src="./build/images/review.png" alt="" />
+                            <h2 class="reviews__item-title">Leave reviews for all meals</h2>
+                            <p class="reviews__item-text">
+                                Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, eirmod assentior eum ne, et omnis antiopam
+                                mel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-pagination js-reviews-slider-pagination"></div>
+                </div>
+            </div>
+        </main>
+        <script src="./build/login.js"></script>
+    </body>
+</html>

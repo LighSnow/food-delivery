@@ -1,0 +1,229 @@
+.header {
+    border: 1px solid $color-athens-gray;
+    margin: 0 0 23px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0 13px 0;
+    }
+
+    &__logo {
+        flex: 0 0 79px;
+        margin: 0 48px 0 0;
+    }
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__search {
+        position: relative;
+        width: 100%;
+        max-width: 224px;
+        margin: 0 20px 0 0;
+    }
+
+    &__search-input {
+        width: 100%;
+        padding: 0 35px 0 12px;
+        font-size: 14px;
+        line-height: 40px;
+        color: $color-gray;
+        border: none;
+        border-radius: 12px;
+        background: $color-athens-gray;
+    }
+
+    &__search-button {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    &__nav {
+        flex: 0 0 262px;
+        margin: 0 19px 0 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 18px;
+    }
+
+    &__link {
+        position: relative;
+        padding: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $color-dark;
+
+        &--delimiter {
+            margin: 0 0 0 12px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: -16px;
+                top: 0;
+                height: 32px;
+                width: 1px;
+                background-color: $color-athens-gray;
+            }
+        }
+    }
+
+    &__close {
+        display: none;
+        width: 25px;
+        height: 25px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: $color-white;
+        }
+    }
+
+    &__basket {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 48px;
+        height: 48px;
+        margin: 0 14px 0 0;
+        background: $color-titan-white;
+        border-radius: 16px;
+    }
+
+    &__basket-order {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 700;
+        color: $color-white;
+        background-color: $color-blue;
+        border-radius: 8px;
+    }
+
+    &__user {
+        flex: 0 0 54px;
+        height: 54px;
+        overflow: hidden;
+        padding: 1px;
+        border: 2px solid $color-athens-gray;
+        border-radius: 16px;
+
+        img {
+            border-radius: 16px;
+        }
+    }
+
+    &__menu {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 44px;
+        height: 44px;
+        margin: 0 0 0 16px;
+        background: $color-athens-gray;
+        border-radius: 16px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -16px;
+            top: 6px;
+            height: 32px;
+            width: 1px;
+            background-color: $color-athens-gray;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        &__logo {
+            margin: 0 20px 0 0;
+        }
+
+        &__middle {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+            background-color: $color-cornflower-blue;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+
+            &.active {
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        &__search {
+            margin: 0;
+        }
+
+        &__nav {
+            flex: initial;
+            margin: 20px 0 0 0;
+        }
+
+
+        &__list {
+            grid-auto-flow: row;
+            row-gap: 10px;
+            text-align: center;
+        }
+
+        &__link {
+            color: $color-white;
+
+            &--delimiter {
+                margin: 0;
+
+                &::after {
+                    content: "";
+                    display: none;
+                }
+            }
+        }
+
+        &__close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: block;
+        }
+
+        &__basket {
+            margin-left: auto;
+        }
+
+        &__user {
+            margin: 0 17px 0 0;
+        }
+
+        &__menu {
+            display: flex;
+        }
+    }
+}

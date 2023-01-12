@@ -1,0 +1,20 @@
+{
+    "name": "esbuild",
+    "version": "1.0.0",
+    "main": "./assest/js/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node ./configs/start.js",
+        "build": "node ./configs/build.js"
+    },
+    "dependencies": {
+        "esbuild": "^0.15.15",
+        "esbuild-plugin-clean": "^1.0.1",
+        "esbuild-plugin-clear": "^1.0.1",
+        "esbuild-plugin-copy": "^2.0.1",
+        "esbuild-sass-plugin": "^2.4.1"
+    },
+    "devDependencies": {
+        "swiper": "^8.4.5"
+    }
+}

@@ -1,0 +1,1 @@
+(()=>{var t=toggleMenu=()=>{document.querySelector(".js-menu").classList.toggle("active")};document.querySelectorAll(".js-menu-toggle").forEach(e=>{e.addEventListener("click",t)});document.querySelectorAll(".js-restaurants-button").forEach(e=>{e.addEventListener("click",({target:o})=>{l(o)})});var l=e=>{e.classList.toggle("active")};})();
